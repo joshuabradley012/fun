@@ -3,7 +3,7 @@ let scene, camera, renderer, particles;
 function setup() {
   // Create scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x000000); // Set background to grey (200)
+  scene.background = new THREE.Color(0xcccccc);
   
   // Create camera with adjusted FOV and position
   camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1000);
@@ -69,7 +69,7 @@ function setup() {
         
         // Reverse the depth so front particles are more opaque
         float opacity = mix(1.0, 0.1, depth / maxDepth) * alpha;
-        gl_FragColor = vec4(1.0, 1.0, 1.0, opacity);
+        gl_FragColor = vec4(0.0, 0.0, 0.0, opacity);
       }
     `
   });
