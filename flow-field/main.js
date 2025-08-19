@@ -1,7 +1,7 @@
 let particles = [];
 let flowField;
 let cols, rows;
-let resolution = 20;
+let resolution = 40;
 
 function setup() {
   createCanvas(600, 600);
